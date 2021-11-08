@@ -1,10 +1,13 @@
 import React from 'react';
+import LoadScript from 'react-load-script';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const abc = 'abc';
   return (
     <div className="App">
+      <LoadScript></LoadScript>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -16,7 +19,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React {abc}
         </a>
       </header>
     </div>
